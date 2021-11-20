@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+body{
+  margin:0;
+  padding:0;
+  background-color: hsl(217, 54%, 11%);
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+}
+
+.card{
+  width:350px;
+  height:600px;
+  margin: 50px auto;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+}
+/*------------------------------container-------------------*/
+.container {
+  position:relative;
+  width: 300px;
+  height: 300px;
+  top:25px;
+  margin: auto;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 5px;
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  bottom: 305px;
+
+}
+
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text{
+  border-radius: 5px;
+  background-color: hsl(178,100%,50%);
+  width: 300px;
+  height: 300px;
+  opacity: 0.5;
+}
+
+.middle img{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50% , -50%);
+  opacity: 1;
+
+
+}
+
+/*-----------------------------Middle part------------------*/
+.title{
+  font-weight: 600;
+  font-size:20px;
+  margin:45px 25px 0;
+}
+.title:hover{
+  color: hsl(178,100%,50%);
+}
+
+.detail{
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  margin:15px 25px;
+  font-size:18px;
+  text-align:left;
+}
+
+.figure{
+  color:  hsl(178, 100%, 50%);
+  font-weight: 400;
+  margin: 15px 25px;
+}
+
+.middle-part{
+  height: 10px;
+}
+.figure{
+  color:  hsl(178, 100%, 50%);
+  font-weight: 400;
+  margin:15px 25px;
+}
+
+.ethereum{
+  float: left;
+  margin: 0px 5px 15px 25px;;
+}
+.clock{
+  margin: 2px 0 0 232px;
+  position: relative;
+  bottom:35px;
+
+}
+.days{
+  float:right;
+  margin:0 25px 0 3px;
+  position: relative;
+  bottom:35px;
+
+}
+
+/*--------------------------------Bottom part------------------------*/
+.line{
+  border-color: hsl(215, 51%, 70%) ;
+  border-top:none;
+  width:300px;
+  margin: 25px;
+}
+.avatar{
+  width:10%;
+  margin:0 15px 0 25px;
+  float:left;
+}
+.bottom{
+  text-align:justify;
+  margin-top: 33px;
+}
+.bottom p{
+  color:hsl(215, 51%, 70%);
+}
+.half{
+  color:#fff;
+}
+.half:hover{
+    color:hsl(178,100%,50%);
+}
+
+.text-hover{
+  color:hsl(178,100%,50%);
+}
+.attribution{
+   font-size: 11px;
+   text-align: center;
+}
+.attribution a{
+   color: hsl(228, 45%, 44%);
+}
+/*-----------------MobileSize-----------------------*/
+
+
+@media only screen and (max-width:375px){
+  .card{
+    width:300px;
+    height:500px;
+  }
+
+ .container {
+  width: 200px;
+  height: 200px;
+
+  margin: 25px;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+
+}
+
+.middle {
+
+  bottom: 255px;
+}
+
+.text{
+  width: 250px;
+  height: 250px;
+}
+
+
+.middle img{
+  left: 60%;
+  top:50%;
+}
+/* ----------------Middle part------------------ */
+
+.title{
+  margin:95px 25px 0;
+}
+.detail{
+  margin:0 25px;
+ }
+
+.figure{
+  margin:15px 0 2px;
+}
+
+.clock{
+  margin: 15px 0 0 135px;
+}
+.days{
+  margin:0 25px 0 0px;
+  bottom:22px;
+}
+
+
+/*--------------------------------Bottom part------------------------*/
+.line{
+  width:250px;
+  margin:25px 25px 15px;
+}
+
+.bottom{
+  margin: 20px 0 ;
+}
+
+.avatar{
+  margin:0 10px 0 25px;
+
+}
+
+}
